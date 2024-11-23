@@ -1,3 +1,11 @@
+<?php
+session_start();
+include "library/liblogin.php";
+if(!cek_login()){
+ header("location:login.php");
+ }
+ cek_timeout()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,9 +43,11 @@
         <a href="#" class="nav-link">Contact</a>
       </li>-->
     </ul>
-
-
-   
+    <ul class="navbar-nav ml-auto">   
+  <li class="nav-item d-none d-sm-inline-block">
+        <a href="logout.php" class="nav-link"><i class="fa fa-power-off"></clas></i>Logout</a>
+      </li>
+      </ul>
   </nav>
   <!-- /.navbar -->
 
@@ -46,18 +56,18 @@
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Belajar PHP</span>
+      <span class="brand-text font-weight-light">Belajar PHP Meylisa</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        <div class="images">
+          <img src="images/3.jpg" class="img-circle elevation-2" alt="User Image"  style="width: 40px; height: 40px; border-radius: 50%; ">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block"><?= $_SESSION['nama']?></a>
         </div>
       </div>
 
@@ -273,7 +283,7 @@
               </p>
             </a>-->
 
-
+            
           </li>
           <li class="nav-item">
             <a href="index.php?halaman=pengguna" class="nav-link">
@@ -322,18 +332,13 @@
              include ("views/Dashboard.php");
              break;
 
-             case "tambah_pengguna";
-             include ("views/from pengguna.php");
+             case "tambahpengguna";
+             include ("views/frompengguna.php");
              break;
 
              case "editpengguna";
-             include ("views/from editpengguna.php");
+             include ("views/fromeditpengguna.php");
              break;
-
-             case "Tampilksn Password";
-             include ("views/from pengguna.php");
-             break;
-
              }
 
              }else{

@@ -13,7 +13,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col mb-3">
-              <a href= "index.php?halaman=tambah_pengguna" class="btn btn-primary float-right"> 
+              <a href= "index.php?halaman=tambahpengguna" class="btn btn-primary float-right"> 
                 <i class="fa fa-user-plus"></i> Tambah Pengguna</a>
             </div>
           </div>
@@ -41,10 +41,9 @@
                     <td>$data[level]</td>
                     <td>
                     <div class='btn-group'>
-                    <a href='index.php?halaman=editpengguna&id=$data
-                    [id]'class='btn btn-sm btn-success'
+                    <a href='index.php?halaman=editpengguna&id=$data[id]'class='btn btn-sm btn-success'
                     title='ubah data'><i class='fa fa-pencil-alt'></i></a>
-                    <a href='#' class='btn btn-sm btn-danger'
+                    <a href='db/dbpengguna.php?proses=hapus&id=$data[id]' class='btn btn-sm btn-danger'
                     title='hapus data'><i class='fa fa-trash-alt'></i></a>
                     </div> 
                     </td>
