@@ -1,10 +1,10 @@
 <?php
 session_start();
-include "library/liblogin.php";
-if(!cek_login()){
- header("location:login.php");
- }
- cek_timeout()
+// include "library/liblogin.php";
+// if(!cek_login()){
+//  header("location:login.php");
+//  }
+//  cek_timeout()
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,21 +56,21 @@ if(!cek_login()){
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Belajar PHP Meylisa</span>
+      <span class="brand-text font-weight-light">oopabsensimeylisa</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="images">
+        <!-- <div class="images">
           <img src="images/3.jpg" class="img-circle elevation-2" alt="User Image"  style="width: 40px; height: 40px; border-radius: 50%; ">
-        </div>
-        <div class="info">
+        </div> -->
+        <!-- <div class="info">
           <a href="#" class="d-block"><?= $_SESSION['nama']?></a>
-        </div>
+        </div> -->
       </div>
-
+ 
      
 
       <!-- Sidebar Menu -->
@@ -78,192 +78,6 @@ if(!cek_login()){
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-         
-        
-          
-          
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../UI/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/icons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/buttons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/sliders.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/modals.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/navbar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/timeline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/ribbons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
 
           <!-- <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
@@ -271,7 +85,7 @@ if(!cek_login()){
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Calendar
-
+</li>
             </p>
             </a>
           </li>
@@ -285,15 +99,44 @@ if(!cek_login()){
 
             
           </li>
-          <li class="nav-item">
-            <a href="index.php?halaman=pengguna" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>
-                pengguna
-              </p>
+<style>
+.input-group {
+  margin-bottom: 15px; /* Jarak bawah */
+}
+
+.nav-link {
+  margin-top: 15px; /* Jarak atas */
+}
+</style>
+          <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-fw fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <li class="nav-item">
+            <a href="index.php?halaman=admin" class="nav-link">
+              <i class="nav-icon far fa-circle text-success"></i>
+              <p class="text">Admin</p>
             </a>
           </li>
           
+            <li class="nav-item">
+            <a href="index.php?halaman=pegawai" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Pegawai</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.php?halaman=absensi" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p class="text">Absensi</p>
+            </a>
+          </li>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -306,7 +149,7 @@ if(!cek_login()){
     <section class="content-header">
       <div class="container-fluid">
         <!--<div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-sm-6">A
             <h1>Blank Page</h1>
           </div>
           <div class="col-sm-6">
@@ -324,23 +167,51 @@ if(!cek_login()){
     <?php
              if(isset($_GET['halaman'])){
              switch ($_GET['halaman']){
-             case "pengguna";
-             include("views/pengguna.php");
+              //bagian admin
+             case "admin";
+             include("views/admin/admin.php");
              break;
 
-             case "home";
+             case "tambahadmin";
+             include ("views/admin/formadmin.php");
+             break;
+
+             case "editadmin";
+             include ("views/admin/formeditadmin.php");
+             break;
+
+             //bagian pegawai
+             case "pegawai";
+             include("views/pegawai/pegawai.php");
+             break;
+
+             case "tambahpegawai";
+             include ("views/pegawai/formpegawai.php");
+             break;
+
+             case "editpegawai";
+             include ("views/pegawai/formeditpegawai.php");
+             break;
+
+              //bagian absensi
+              case "absensi";
+              include("views/absensi/absensi.php");
+              break;
+ 
+              case "tambahabsensi";
+              include ("views/absensi/formabsensi.php");
+              break;
+ 
+              case "editabsensi";
+              include ("views/absensi/formeditabsensi.php");
+              break;
+
+              case "home";
              include ("views/Dashboard.php");
              break;
 
-             case "tambahpengguna";
-             include ("views/frompengguna.php");
-             break;
-
-             case "editpengguna";
-             include ("views/fromeditpengguna.php");
-             break;
-             }
-
+            }
+             
              }else{
               include ("views/Dashboard.php");
              }

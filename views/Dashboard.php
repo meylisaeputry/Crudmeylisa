@@ -1,5 +1,6 @@
  <!-- Default box -->
  <div class="card">
+ <button type="button" class="btn btn-block btn-success btn-flat"><div class="card-title"><h4>Selamat Datang Di Absensimeylisa</h4></div></button><br>
         <div class="card-header">
           <h3 class="card-title">Dashboard</h3>
 
